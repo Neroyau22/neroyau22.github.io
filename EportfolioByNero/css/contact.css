@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 20px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: rgba(39, 38, 38, 0.973);
+  display: flex;
+}
+.main {
+  float: left;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15vw;
+}
+.main .passage {
+  float: left;
+  width: 100%;
+}
+.main .passage .row1 {
+  float: left;
+  width: 100%;
+}
+.main .passage .row1 h1 {
+  font-size: 10vw;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  /* between paragraphs */
+}
+.main .passage .row2 {
+  width: 100%;
+  float: left;
+}
+.main .passage .row2 h2 {
+  color: orange;
+  font-size: 8vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main .passage .row2 p {
+  font-size: 5vw;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.main .passage .row2 .item {
+  float: left;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.main .passage .row2 .item a {
+  display: block;
+  width: 20vw;
+  margin: 0 auto;
+  line-height: 20vw;
+  text-align: center;
+  background-color: rgba(94, 94, 94, 0.727);
+  border-radius: 50%;
+}
+.main .passage .row2 .item a i {
+  font-size: 5vw;
+  color: orange;
+  line-height: 20vw;
+}
+.main .passage .row2 .item h2 {
+  margin-top: 30px;
+  color: white;
+}
+.main .passage .row2 .item p {
+  font-weight: normal;
+  font-size: 4vw;
+  margin-bottom: 0;
+}
+.main .passage .row2 .item h2,
+.main .passage .row2 .item p {
+  width: 100%;
+  text-align: center;
+}
+.main .passage .row3 h2 {
+  color: orange;
+  font-size: 8vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main .passage .row3 .input-form form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.516);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.486);
+  color: #fff;
+}
+.main .passage .row3 .input-form form input::placeholder {
+  color: rgba(255, 255, 255, 0.753);
+}
+.main .passage .row3 .input-form form input:nth-child(4) {
+  height: 50vw;
+}
+.main .passage .row3 .button {
+  float: left;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main .passage .row3 .button a {
+  display: block;
+  width: 30vw;
+  line-height: 10vw;
+  text-align: center;
+  background-color: orange;
+  border-radius: 5px;
+}
+/*
+less than 768 超小屏幕: max-width: 768px
+Larger than 768 小屏幕: min-width: 768px
+> 992 中型: min-width=992px
+>1200 大屏幕 min-width=1200px
+*/
+@media only screen and (min-width: 768px) {
+  .main {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .main .passage .row1 h1 {
+    font-size: 50px;
+  }
+  .main .passage .row2 h2 {
+    color: orange;
+    font-size: 50px;
+  }
+  .main .passage .row2 p {
+    font-size: 40px;
+  }
+  .main .passage .row2 .item {
+    width: 100%;
+  }
+  .main .passage .row2 .item a {
+    width: 15vw;
+    line-height: 15vw;
+  }
+  .main .passage .row2 .item a i {
+    font-size: 5vw;
+    line-height: 15vw;
+  }
+  .main .passage .row2 .item h2 {
+    color: white;
+    font-size: 50px;
+    margin-top: 30px;
+  }
+  .main .passage .row2 .item p {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .main .passage .row2 .item h2,
+  .main .passage .row2 .item p {
+    width: 100%;
+    text-align: center;
+  }
+  .main .passage .row3 h2 {
+    font-size: 50px;
+  }
+  .main .passage .row3 .input-form form input {
+    width: 90%;
+  }
+  .main .passage .row3 .button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .main .passage .row3 .button a {
+    font-size: 25px;
+    width: 200px;
+    line-height: 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .main .passage .row1 h1 {
+    font-size: 40px;
+  }
+  .main .passage .row2 .item {
+    width: 22%;
+  }
+  .main .passage .row2 .item a {
+    width: 80px;
+    line-height: 80px;
+  }
+  .main .passage .row2 .item a i {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .main .passage .row2 .item h2 {
+    font-size: 40px;
+  }
+  .main .passage .row2 .item p {
+    font-size: 20px;
+  }
+  .main .passage .row3 h2 {
+    font-size: 40px;
+  }
+  .main .passage .row3 .input-form form input {
+    width: 90%;
+  }
+  .main .passage .row3 .input-form form input:nth-child(4) {
+    height: 300px;
+  }
+  .main .passage .row3 .button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .main .passage .row3 .button a {
+    font-size: 25px;
+    width: 200px;
+    line-height: 100px;
+  }
+}
